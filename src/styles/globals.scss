@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-black bg-white;
+  overscroll-behavior-y: none;
+}
+
+h1 {
+  @apply text-black font-medium text-2xl;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+  outline: 0;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  &:focus {
+    border-bottom: 1px solid blue;
+  }
+}
+
+button {
+  text-decoration: none;
+  transition: transform 0.1s;
+  border-radius: 0.8rem;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    transform: translateX(0.5px) translateY(1px);
+    transition: transform 0.1s;
+  }
+}
+
+.container__small {
+  @apply w-96 h-1/2 md:h-2/4 m-4 bg-white shadow-2xl p-8 rounded-2xl flex-col;
+}
