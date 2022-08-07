@@ -17,7 +17,7 @@ const User = () => {
 
         <div className="mb-4 mt-4">
           <button
-            className="p-2 bg-main"
+            className="p-2 bg-main-light "
             onClick={(e) => {
               e.preventDefault();
             }}
